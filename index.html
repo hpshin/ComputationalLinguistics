@@ -1,0 +1,2960 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta content="IE=11.0000" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <title>Studies in Computational Linguistics 1</title>
+    <meta name="author" content="Hyopil Shin">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Le styles -->
+    <link href="index_files/bootstrap.css" rel="stylesheet">
+    <link href="index_files/bootstrap-responsive.css" rel="stylesheet">
+    <link href="index_files/mass60.css" rel="stylesheet">
+    <meta name="GENERATOR" content="MSHTML 11.00.10570.1001">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  </head>
+  <body style="padding-top: 30px;">
+    <p><font face="Trebuchet MS"><!--
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Project name</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    --> </font></p>
+    <div class="container"> <font face="Trebuchet MS"><!-- Main hero unit for a primary marketing message or call to action -->
+      </font>
+      <div class="hero-unit">
+        <h2><font face="Trebuchet MS"><font size="+3">108.413A:
+              Computational Linguistics</font><br>
+          </font></h2>
+        <p><font face="Trebuchet MS" size="+1">Hyopil Shin (Dept. of
+            Linguistics, Seoul National University)</font></p>
+        <font size="+1"> </font>
+        <p><font size="+1"><a href="mailto:hpshin@snu.ac.kr"><font
+                face="Trebuchet MS">hpshin@snu.ac.kr</font></a><font
+              face="Trebuchet MS">, </font><a
+              href="http://knlp.snu.ac.kr"><font face="Trebuchet MS">http://knlp.snu.ac.kr</font></a><font
+              face="Trebuchet MS"><br>
+              Tue/Thur&nbsp; 11:00 to 12:15 in building 14 room 204<br>
+            </font></font></p>
+        <font size="+1"> </font>
+        <p><font face="Trebuchet MS" size="3"><font size="+1">T.A: </font>TBA<br>
+          </font></p>
+        <p><font face="Trebuchet MS"><img src="deep_blue_0.png"
+              width="207" height="155" border="0"><img src="ibm_0.png"
+              width="205" height="155" border="0"><img
+              src="alphago_0.png" width="201" height="151" border="0"><img
+              src="transformer-ber-ulmfit-elmo.png" alt="bert"
+              width="328" height="151"> </font></p>
+        <p><font face="Trebuchet MS">(http://www.theverge.com/2016/3/11/11208078/lee-se-dol-go-google-kasparov-jennings-ai)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            (</font>
+          <meta charset="utf-8">
+          <a href="http://jalammar.github.io/illustrated-bert/">http://jalammar.github.io/illustrated-bert/</a>)<font
+            face="Trebuchet MS" size="3"> </font></p>
+      </div>
+      <div class="row">
+        <div class="span7">
+          <h2><font face="Trebuchet MS">Course Description</font></h2>
+          <p><font face="Trebuchet MS" size="+1">Recently deep learning
+              &nbsp;approaches have obtained very high performance
+              across many different computational linguistics or Natural
+              Language Processing (NLP). This course provides an
+              introduction to the Neural Network Model and &nbsp;deep
+              learning methodologies applied to NLP </font><font
+              face="Trebuchet MS" size="+1"><font face="Trebuchet MS">
+                from scratch</font>. On the model side we will start
+              from basic notions of Neural Networks such as
+              linear/logistic regression, perceptrons, backpropagations,
+              and parameter optimizations. Then we will&nbsp; cover
+              actual Neural Network models including Feedforward,
+              Convolutional, Recurrent, and Long Short Term Neural
+              Networks. Along the lines of the models, various
+              word/sentence/contextual embeddings and attention
+              mechanism will also be dealt with in depth. The first part
+              of the class focuses on the basics of neural network
+              models and the second part covers actual implementations
+              of NLP tasks such as sentiment analysis(movie/text
+              classifications), and text generations. We will take
+              advantage of modules from</font><font face="Trebuchet MS"
+              size="+1"><font face="Trebuchet MS"> Python 3.x and&nbsp;</font>
+              PyTorch. Through lectures and programming assignments
+              students will learn the necessary implementation tricks
+              for making neural networks work on practical
+              problems.&nbsp;&nbsp;</font></p>
+          <h2><font face="Trebuchet MS">Updates</font></h2>
+          <ul>
+            <li><font face="Trebuchet MS" size="+1"> Please set up
+                python, pytorch, and colab for class! <br>
+              </font></li>
+          </ul>
+          <h2><font face="Trebuchet MS">Useful Sites</font></h2>
+          <p><br>
+          </p>
+          <ul>
+            <li><font face="Trebuchet MS" size="+1">Lectures<br>
+              </font></li>
+            <font size="+1"> </font>
+          </ul>
+          <font size="+1"> <font face="Trebuchet MS"> </font> </font>
+          <ul>
+            <ul>
+              <li><font face="Trebuchet MS" size="+1"><a
+                    href="http://www.nltk.org/book/">Natural Language
+                    Processing with Python</a></font></li>
+              <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/course_progression/">Practical
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Deep Learning with PyTorch</a><br>
+                </font></li>
+            </ul>
+            <ul>
+              <li><font face="Trebuchet MS" size="+1"><a
+                    href="https://github.com/WegraLee/deep-learning-from-scratch">Deep
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Learning From Scratch source codes</a></font></li>
+            </ul>
+          </ul>
+          <font size="+1"> </font>
+          <ul>
+            <li><font face="Trebuchet MS" size="+1">PyTorch</font></li>
+            <ul>
+              <li><font face="Trebuchet MS" size="+1"><a
+                    href="https://pytorch.org/">PyTorch</a></font></li>
+              <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/course_progression/">Practical
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Deep Learning With PyTorch</a></font></li>
+            </ul>
+          </ul>
+          <font size="+1"> </font>
+          <ul>
+            <font size="+1"> </font>
+            <li><font face="Trebuchet MS" size="+1">Other Resources</font></li>
+            <font size="+1"> </font>
+            <ul>
+              <font size="+1"> </font>
+              <li><font face="Trebuchet MS" size="+1"><a
+                    href="https://jupyter.org/">Jupyter notebook</a></font></li>
+              <font face="Trebuchet MS"> </font>
+              <ul>
+                <font face="Trebuchet MS"> </font>
+                <li>
+                  <div><font face="Trebuchet MS"><a
+href="https://towardsdatascience.com/jupyter-notebook-for-beginners-a-tutorial-f55b57c23ada"><font
+                          size="+1">Jupyter notebook for beginners-A
+                          tutorial</font></a></font></div>
+                </li>
+                <font face="Trebuchet MS"> </font>
+                <li>
+                  <div><font face="Trebuchet MS" size="+1"><a
+href="https://towardsdatascience.com/bringing-the-best-out-of-jupyter-notebooks-for-data-science-f0871519ca29">Bring
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        the best out of Jupyter notebooks for Data
+                        science-Enhance jupyter notebook’s productivity
+                        with these tips &amp; tricks</a> </font></div>
+                </li>
+                <font face="Trebuchet MS"> </font>
+                <li>
+                  <div><font face="Trebuchet MS"><a
+href="https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231"><font
+                          size="+1">Jump out of the Jupyter Notebook
+                          with nbconvert</font></a></font></div>
+                </li>
+                <font face="Trebuchet MS"> </font>
+                <li><font face="Trebuchet MS"><a
+href="https://towardsdatascience.com/jupyter-notebook-extensions-517fa69d2231"><font
+                        size="+1">Jupyter Notebook Extensions</font></a></font>
+                </li>
+              </ul>
+            </ul>
+          </ul>
+          <br>
+          <ul>
+            <ul>
+              <font size="+1"> </font>
+              <li><font face="Trebuchet MS" size="+1"><a
+                    href="https://colab.research.google.com/notebooks/welcome.ipynb">Google
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Colabatory</a></font></li>
+              <ul>
+                <li><font face="Trebuchet MS"><font face="Trebuchet MS"
+                      size="+1"><a
+href="https://medium.com/dair-ai/primer-for-learning-google-colab-bb4cabca5dd6">Primer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        for Learning Google CoLab</a></font></font></li>
+                <li><a
+href="https://towardsdatascience.com/getting-started-with-google-colab-f2fff97f594c"><font
+                      size="+1"><font face="Trebuchet MS">Getting
+                        Started with Google CoLab</font></font></a><font
+                    face="Trebuchet MS"><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font></font></li>
+              </ul>
+            </ul>
+          </ul>
+          <ul>
+          </ul>
+        </div>
+        <div class="span4 offset1">
+          <h2><font face="Trebuchet MS">Textbook and Sites<br>
+            </font></h2>
+          <p><font face="Trebuchet MS"><img
+                src="deepLearningScratch.jpg" width="155" height="225"
+                border="0"></font></p>
+          <p><font face="Trebuchet MS">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</font></p>
+          <p><font face="Trebuchet MS" size="+1">Deep Learning from
+              Scratch (밑바닥부터 시작하는&nbsp;딥러닝), by 사이토 고키, 한빛출판사. </font><font
+              size="+1"><a
+                href="https://github.com/WegraLee/deep-learning-from-scratch"><font
+                  face="Trebuchet MS">Deep Learning From Scratch source
+                  codes</font></a><br>
+            </font></p>
+          <p><font size="+1"><br>
+              <img src="dlWizard.png" alt="DL wizard" width="242"
+                height="177"><br>
+            </font></p>
+          <p><font size="+1"><br>
+            </font></p>
+          <p><a
+              href="https://www.deeplearningwizard.com/deep_learning/intro/"><font
+                face="Trebuchet MS" size="+1">Deep Learning Tutorials
+                based on PyTorch</font></a><br>
+          </p>
+        </div>
+      </div>
+      <div class="row" id="syllabus">
+        <div class="span12">
+          <h2><font face="Trebuchet MS">Syllabus</font></h2>
+          <table id="tblMain" class="table table-striped" width="1006"
+            height="2941" cellspacing="0" cellpadding="0" border="0">
+            <tbody>
+              <tr>
+                <td class="s0" width="17" height="23"><font size="+1"><br>
+                  </font> </td>
+                <td class="s1" align="center" width="72" height="23"><font
+                    face="Trebuchet MS" size="+1">Date</font></td>
+                <td class="s1" align="center" width="350" height="23"><font
+                    face="Trebuchet MS" size="+1">Topics</font></td>
+                <td class="s1" align="center" width="300" height="23"><font
+                    face="Trebuchet MS" size="+1">Related Materials
+                    and&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Resources</font><font size="+1"><br>
+                  </font> </td>
+                <td class="s1" align="center" width="380" height="23"><font
+                    face="Trebuchet MS" size="+1">Assignments</font></td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="233"><font
+                    face="Trebuchet MS" size="+1">1</font></td>
+                <td class="s3" width="72" height="233"><font
+                    face="Trebuchet MS" size="+1">3/1-3/7</font></td>
+                <td class="s4" width="390" height="233">
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font face="Trebuchet MS"
+                      size="+1">I<b>ntroduction to Computational
+                        Linguistics / Natural Language Processing</b><br>
+                    </font></p>
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                      Preliminaries:<br>
+                      <br>
+                    </font></p>
+                  <ul>
+                    <li><a
+href="https://towardsdatascience.com/machine-learning-basics-part-1-a36d38c7916"><font
+                          size="+1"><font face="Trebuchet MS">Machine
+                            Learning -Basics</font></font></a></li>
+                    <li><font size="+1"><font face="Trebuchet MS"><a
+                            href="https://medium.com/@ageitgey/machine-learning-is-fun-80ea3ec3c471">Machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Learning is Fun!</a> (The world's easiest
+                          introduction to Machine Learning, part1~part8)</font></font></li>
+                    <li><font size="+1"><font face="Trebuchet MS"><a
+href="https://medium.com/@ageitgey/natural-language-processing-is-fun-9a0bff37854e">Natural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Language Processing is Fun!</a><br>
+                        </font></font></li>
+                  </ul>
+                  <ul>
+                    <li><font face="Trebuchet MS" size="+1">Recap of
+                        Linear Regression and Logistic Regression<br>
+                      </font></li>
+                    <ul>
+                      <li><font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/sigmoid/linear-regression-from-scratch-with-python-5c33712a1cec">Linear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Regression From Scratch with Python</a></font></li>
+                      <li><font face="Trebuchet MS" size="+1"><a
+href="https://towardsdatascience.com/linear-regression-simplified-ordinary-least-square-vs-gradient-descent-48145de2cf76">Linear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Regression Simplified-Ordinary Least Square
+                            vs Gradient Descent</a><br>
+                        </font></li>
+                    </ul>
+                    <li><a
+                        href="https://web.stanford.edu/%7Ejurafsky/slp3/5.pdf"><font
+                          face="Trebuchet MS" size="+1">Logistic
+                          Regression</font></a><font face="Trebuchet MS"
+                        size="+1"><br>
+                      </font></li>
+                  </ul>
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font></p>
+                </td>
+                <td class="s4" width="300" height="233"><b><font
+                      face="Trebuchet MS" size="+1">PyTorch:</font></b><font
+                    size="+1"><br>
+                  </font>
+                  <ul>
+                    <li><font size="+1"><a
+href="https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"><font
+                            face="Trebuchet MS">Deep Learning With
+                            PyTorch: A 60 Minute Blitz</font></a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+                          href="https://pytorch.org/tutorials/beginner/pytorch_with_examples.html">Learning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          PyTorch with Examples</a></font><font
+                        size="+1"><br>
+                      </font> </li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_matrices/">Matrices</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_linear_regression/">Linear
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Regression With PyTorch</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_logistic_regression/">Logistic
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Regression With PyTorch</a></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="233"><font
+                    face="Trebuchet MS" size="+1">Install Python
+                    3.x&nbsp;and&nbsp; PyTorch<br>
+                  </font><font size="+1"><br>
+                  </font> <font face="Trebuchet MS" size="+1"><font
+                      face="Trebuchet MS"><a
+                        href="https://hunkim.github.io/ml/"><font
+                          face="Trebuchet MS">모두를 위한 머신러닝/딥러닝(홍콩과기대 김성훈
+                          교수)</font></a><br>
+                    </font> </font>
+                  <ul>
+                    <li><font face="Trebuchet MS" size="+1">Linear
+                        Regression의 개념:비디오, 강의 슬라이드</font></li>
+                    <li><font face="Trebuchet MS" size="+1">Linear
+                        Regression cost함수 최소화: 비디오, 강의 슬라이</font></li>
+                    <li><font face="Trebuchet MS" size="+1">여러 개의
+                        입력(feature)의 Linear Regression: 비디오, 강의 슬라이드</font></li>
+                    <li><font face="Trebuchet MS" size="+1">Logistic
+                        Regression classification: 강의 슬라이드</font><font
+                        face="Trebuchet MS" size="+1">-Hypothesis 함수 소개:
+                        비디오</font><font face="Trebuchet MS" size="+1">-
+                        cost 함수 소개: 비디오 </font></li>
+                  </ul>
+                  <p>
+                    <meta charset="utf-8">
+                  </p>
+                  <p style="margin: 0px 0px 9px; line-height: 18px;
+                    font-family: &quot;Helvetica Neue&quot;, Helvetica,
+                    Arial, sans-serif; font-size: 13px; color: rgb(51,
+                    51, 51); font-style: normal; font-variant-ligatures:
+                    normal; font-variant-caps: normal; font-weight: 400;
+                    letter-spacing: normal; orphans: 2; text-align:
+                    left; text-indent: 0px; text-transform: none;
+                    white-space: normal; widows: 2; word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px;
+                    text-decoration-style: initial;
+                    text-decoration-color: initial;"><font size="+1"><a
+href="https://machinelearningmastery.com/implement-simple-linear-regression-scratch-python/"
+                        style="color: rgb(0, 136, 204); text-decoration:
+                        none;"><font face="Trebuchet MS">How to
+                          Implement Simple Linear Regression From
+                          Scratch with Python</font></a></font></p>
+                  <p style="margin: 0px 0px 9px; line-height: 18px;
+                    font-family: &quot;Helvetica Neue&quot;, Helvetica,
+                    Arial, sans-serif; font-size: 13px; color: rgb(51,
+                    51, 51); font-style: normal; font-variant-ligatures:
+                    normal; font-variant-caps: normal; font-weight: 400;
+                    letter-spacing: normal; orphans: 2; text-align:
+                    left; text-indent: 0px; text-transform: none;
+                    white-space: normal; widows: 2; word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px;
+                    text-decoration-style: initial;
+                    text-decoration-color: initial;"><font size="+1"><a
+href="https://machinelearningmastery.com/logistic-regression-for-machine-learning/"
+                        style="color: rgb(0, 136, 204); text-decoration:
+                        none;"><font face="Trebuchet MS">Logistic
+                          Regression for Machine Learning</font></a></font></p>
+                  <font face="Trebuchet MS" size="+1"><a
+                      href="http://www.nltk.org/"> </a></font></td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="145"><font
+                    face="Trebuchet MS" size="+1">2</font></td>
+                <td class="s3" width="72" height="145"><font
+                    face="Trebuchet MS" size="+1">3/8-3/14</font></td>
+                <td class="s4" width="390" height="145"><b><font
+                      face="Trebuchet MS" size="+1">Introduction
+                      to&nbsp;a Neural Network</font></b>
+                  <ul>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL02-perceptron.pdf">Perceptron</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL03-nueralNetwork.pdf">Neural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Network: Activation Function(sigmoid, step,
+                            tanh, ReLU), Softmax</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL04-Neural%20NetworkLearning.pdf">Neural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Network Training: Loss Function, Gradient
+                            Descent Method</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL05-Backpropagation.pdf">Backward
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Propagation of Errors</a></span></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="145"><b><font
+                      face="Trebuchet MS" size="+1">PyTorch:</font></b><font
+                    size="+1"><br>
+                  </font>
+                  <ul>
+                    <li><font size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_feedforward_neuralnetwork/"><font
+                            face="Trebuchet MS">Feedforward Neural
+                            Network with PyTorch</font></a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_gradients/">Gradient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          With PyTorch</a><br>
+                      </font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/forwardpropagation_backpropagation_gradientdescent/">Forwardpropagation,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Backpropagation and Gradient Descent with
+                          PyTorch</a><br>
+                      </font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="145"><font
+                    face="Trebuchet MS" size="+1">딥러닝 개념잡기</font><font
+                    face="Trebuchet MS" size="+1"> </font>
+                  <ul>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/03/25/Dataset_and_Fit_Talk/"><font
+                            face="Trebuchet MS">데이터셋 이야기</font></a></font></li>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/03/25/Fit_Talk/"><font
+                            face="Trebuchet MS">학습과정 이야기</font></a></font></li>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/07/09/Training_Monitoring/"><font
+                            face="Trebuchet MS">학습과정 살펴보기</font></a></font></li>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/07/09/Early_Stopping/"><font
+                            face="Trebuchet MS">학습 조기종료 시키기</font></a></font></li>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/05/22/Evaluation_Talk/"><font
+                            face="Trebuchet MS">평가 이야기</font></a></font></li>
+                    <li><font size="+1"><a
+                          href="https://tykimos.github.io/2017/06/10/Model_Save_Load/"><font
+                            face="Trebuchet MS">학습 모델 보기/저장하기/불러오기</font></a></font></li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17"><font face="Trebuchet MS"
+                    size="+1">3</font></td>
+                <td class="s3" width="72"><font face="Trebuchet MS"
+                    size="+1">3/15-3/21</font></td>
+                <td class="s4" width="390"><b><font face="Trebuchet MS"
+                      size="+1">Introduction to&nbsp;a Neural Network</font></b>
+                  <ul>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL02-perceptron.pdf">Perceptron</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL03-nueralNetwork.pdf">Neural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Network: Activation Function(sigmoid, step,
+                            tanh, ReLU), Softmax</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL04-Neural%20NetworkLearning.pdf">Neural
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Network Training: Loss Function, Gradient
+                            Descent Method</a></span></font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1"><span style="line-height:100%;
+                          margin-top:0; margin-bottom:0;"><a
+                            href="dlFromScratch/DL05-Backpropagation.pdf">Backward
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Propagation of Errors</a></span></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="300"><b><font face="Trebuchet MS"
+                      size="+1">PyTorch:</font></b><font size="+1"><br>
+                  </font>
+                  <ul>
+                    <li><font size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_feedforward_neuralnetwork/"><font
+                            face="Trebuchet MS">Feedforward Neural
+                            Network with PyTorch</font></a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_gradients/">Gradient
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          With PyTorch</a><br>
+                      </font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/forwardpropagation_backpropagation_gradientdescent/">Forwardpropagation,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Backpropagation and Gradient Descent with
+                          PyTorch</a></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380"><font size="+1">&nbsp; </font><b><font
+                      face="Trebuchet MS" size="+1"><br>
+                    </font></b></td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="132"><font
+                    face="Trebuchet MS" size="+1">4</font></td>
+                <td class="s3" width="72" height="132"><font
+                    face="Trebuchet MS" size="+1">3/22-3/28</font></td>
+                <td class="s4" width="390" height="132">
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font size="+1"><a
+                        href="dlFromScratch/DL06-NNLearningConcepts.pdf"><b><font
+                            face="Trebuchet MS">Introduction to a Neural
+                            Network</font></b></a><br>
+                    </font> </p>
+                  <ul>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Parameter Optimization</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Weight Decay</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Batch Normalization</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">DropOut</font></li>
+                  </ul>
+                  <p><br>
+                    <a
+href="https://towardsdatascience.com/hyper-parameter-tuning-techniques-in-deep-learning-4dad592c63c8"><font
+                        size="+1"><font face="Trebuchet MS">Hyper-parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Tuning Techniques in Deep Learning</font></font></a><br>
+                  </p>
+                  <p><b><font face="Trebuchet MS" size="+1"><a
+                          href="http://ruder.io/optimizing-gradient-descent/">An
+
+
+
+
+
+
+
+
+
+
+
+
+                          Overview of Gradient Descent Optimization
+                          Algorithm</a><br>
+                      </font></b></p>
+                  <p>
+                    <meta charset="utf-8">
+                  </p>
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="256">
+                  <p><b><font face="Trebuchet MS" size="+1">PyTorch:</font></b><font
+                      size="+1"><br>
+                    </font></p>
+                  <ul>
+                    <li> <font size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/derivative_gradient_jacobian/"><font
+                            face="Trebuchet MS">Derivative, Gradient and
+                            Jacobian</font></a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/lr_scheduling/">Learning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Rate Scheduling</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/optimizers/">Optimization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Algorithms</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_initialization_activation_functions/">Weight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Initialization and Activation Functions</a></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="132"><font size="+1"><br>
+                  </font></td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="132"><font
+                    face="Trebuchet MS" size="+1">5</font></td>
+                <td class="s3" width="72" height="132"><font
+                    face="Trebuchet MS" size="+1">3/29-4/4</font></td>
+                <td class="s4" width="390" height="132">
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font size="+1"><a
+                        href="dlFromScratch/DL06-NNLearningConcepts.pdf"><b><font
+                            face="Trebuchet MS">Introduction to a Neural
+                            Network</font></b></a><br>
+                    </font> </p>
+                  <ul>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Parameter Optimization</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Weight Decay</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">Batch Normalization</font></li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;"><font face="Trebuchet MS"
+                        size="+1">DropOut</font></li>
+                  </ul>
+                  <p><br>
+                    <a
+href="https://towardsdatascience.com/hyper-parameter-tuning-techniques-in-deep-learning-4dad592c63c8"><font
+                        size="+1"><font face="Trebuchet MS">Hyper-parameter
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Tuning Techniques in Deep Learning</font></font></a><br>
+                  </p>
+                  <p><b><font face="Trebuchet MS" size="+1"><a
+                          href="http://ruder.io/optimizing-gradient-descent/">An
+
+
+
+
+
+
+
+
+
+
+
+
+                          Overview of Gradient Descent Optimization
+                          Algorithm</a><br>
+                      </font></b></p>
+                  <p><b><font face="Trebuchet MS" size="+1"><br>
+                      </font></b></p>
+                </td>
+                <td class="s4" width="300" height="132"> <font
+                    face="Trebuchet MS" size="+1"><b><font
+                        face="Trebuchet MS" size="+1">PyTorch:</font></b><font
+                      size="+1"><br>
+                    </font> </font>
+                  <ul>
+                    <li> <font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/derivative_gradient_jacobian/">Derivative,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Gradient and Jacobian</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/lr_scheduling/">Learning
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Rate Scheduling</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/optimizers/">Optimization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Algorithms</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/boosting_models_pytorch/weight_initialization_activation_functions/">Weight
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Initialization and Activation Functions</a></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="132">
+                  <p><font size="+1">&nbsp; <br>
+                    </font> </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="247"><font
+                    face="Trebuchet MS" size="+1">6</font></td>
+                <td class="s3" width="72" height="247"><font
+                    face="Trebuchet MS" size="+1">4/5-4/11</font></td>
+                <td class="s6" width="390" height="247">
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font size="+1"><br>
+                    </font> <font size="+1"><a
+                        href="dlFromScratch/DL07-Convolutional%20Neural%20Network.pdf"><font
+                          face="Trebuchet MS">Convolutional Neural
+                          Network</font></a><br>
+                    </font> </p>
+                  <ul>
+                    <li><font size="+1"><a
+                          href="http://taewan.kim/post/cnn/"><font
+                            face="Trebuchet MS">Convolutional Neural
+                            Network 요약</font></a></font></li>
+                  </ul>
+                  <p><br>
+                    <font size="+1"><font face="Trebuchet MS"><a
+href="http://www.wildml.com/2015/11/understanding-convolutional-neural-networks-for-nlp/">Understanding
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          Convolutional Neural Network for&nbsp; NLP</a><br>
+                      </font></font></p>
+                  <ul>
+                  </ul>
+                  <ul>
+                  </ul>
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="247">
+                  <ul>
+                  </ul>
+                  <font face="Trebuchet MS" size="+1"><b><font
+                        face="Trebuchet MS" size="+1">PyTorch:</font></b><font
+                      size="+1"><br>
+                    </font> </font>
+                  <ul>
+                    <li><font size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_convolutional_neuralnetwork/"><font
+                            face="Trebuchet MS">Convolutional Neural
+                            Network with PyTorch</font></a></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="247">
+                  <p><br>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="202"><font
+                    face="Trebuchet MS" size="+1">7</font></td>
+                <td class="s3" width="72" height="202"><font
+                    face="Trebuchet MS" size="+1">4/12-4/18</font></td>
+                <td class="s4" width="390" height="202">
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font size="+1">&nbsp;</font></p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font size="+1"><a
+href="https://towardsdatascience.com/illustrated-guide-to-recurrent-neural-networks-79e5eb8049c9"><font
+                          face="Trebuchet MS">Reccurent Neural Network</font></a><br>
+                    </font> <font size="+1"><a
+                        href="https://www.youtube.com/watch?v=UNmqTiOnRfg"><font
+                          face="Trebuchet MS">A Friendly Introduction to
+                          Recurrent Neural Network</font></a><br>
+                    </font></p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><br>
+                  </p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font></p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font></p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font></p>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font face="Trebuchet MS"
+                      size="+1"><br>
+                      <a
+href="https://towardsdatascience.com/illustrated-guide-to-lstms-and-gru-s-a-step-by-step-explanation-44e9eb85bf21">Long
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Short-Term Memory Neural Network and Gated
+                        Recurrent Unit<br>
+                      </a></font></p>
+                  <font size="+1"> </font>
+                  <p style="line-height: 100%; margin-top: 0px;
+                    margin-bottom: 0px;"><font size="+1"> </font> </p>
+                </td>
+                <td class="s4" width="300" height="202">
+                  <p><b><font face="Trebuchet MS" size="+1">PyTorch:</font></b></p>
+                  <ul>
+                    <li><font size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_recurrent_neuralnetwork/"><font
+                            face="Trebuchet MS">Recurrent Neural Network
+                            With PyTorch</font></a></font></li>
+                  </ul>
+                  <p><br>
+                  </p>
+                  <ul>
+                    <li><font size="+1"><font face="Trebuchet MS"><font
+                            size="+1"><a
+href="https://www.deeplearningwizard.com/deep_learning/practical_pytorch/pytorch_lstm_neuralnetwork/"><font
+                                face="Trebuchet MS">Long Short-Term
+                                Memory Neural Network With PyTorch</font></a></font></font></font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="202">
+                  <p><font size="+1"><br>
+                    </font> </p>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="247"><font
+                    face="Trebuchet MS" size="+1">8</font></td>
+                <td class="s3" width="72" height="247"><font
+                    face="Trebuchet MS" size="+1">4/19-4/25</font></td>
+                <td class="s4" width="390" height="247"><font size="+1"><font
+                      face="Trebuchet MS" size="+1"><font
+                        face="Trebuchet MS" size="+1"><font
+                          face="Trebuchet MS"><b>NLP Task 1: Sentiment
+                            Analysis</b><br>
+                        </font></font> <font size="+1"><a
+                          href="https://github.com/bentrevett/pytorch-sentiment-analysis"><font
+                            face="Trebuchet MS">PyTorch Sentiment
+                            Analysis (IMDB)</font></a></font><font
+                        size="+1"><font face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS"><b><br>
+                              <br>
+                              NLP Task 2: Sentiment Analysis for Korean<br>
+                              Naver Movie Review Sentiment Analysis<br>
+                              <br>
+                            </b></font></font></font> </font> </font>
+                </td>
+                <td class="s4" width="300" height="247">
+                  <p><font size="+1"><font face="Trebuchet MS" size="+1"><a
+href="http://mlexplained.com/2018/02/08/a-comprehensive-tutorial-to-torchtext/"><font
+                            face="Trebuchet MS" size="+1"><font
+                              face="Trebuchet MS">A Comprehensive
+                              Introduction to Torchtext</font></font></a><br>
+                        <br>
+                        <a href="https://github.com/pytorch/text"><font
+                            size="+1"><font face="Trebuchet MS">Torchtext
+
+                              Github</font></font></a></font></font></p>
+                </td>
+                <td class="s4" width="380" height="247"><font size="+1"><br>
+                  </font> </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="80"><font
+                    face="Trebuchet MS" size="+1">9</font></td>
+                <td class="s3" width="72" height="80"><font
+                    face="Trebuchet MS" size="+1">4/26-5/2</font></td>
+                <td class="s4" width="390" height="80"><font size="+1"><font
+                      face="Trebuchet MS"><b>Mid-Term Test</b></font></font>
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="80">
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="80"><font size="+1">
+                  </font><br>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="105"><font
+                    face="Trebuchet MS" size="+1">10</font></td>
+                <td class="s3" width="72" height="105"><font
+                    face="Trebuchet MS" size="+1">5/3-5/9</font></td>
+                <td class="s4" width="390" height="105"><font size="+1"><font
+                      face="Trebuchet MS"><b>E</b></font><font
+                      face="Trebuchet MS" size="+1"><b>ncoder-Decoder<br>
+                      </b><a
+href="https://machinelearningmastery.com/encoder-decoder-long-short-term-memory-networks/">Encoder-Decoder
+
+
+
+
+
+
+
+
+
+
+
+                        Long Short-Term Memory Networks</a><br>
+                      <a
+                        href="https://machinelearningmastery.com/lstm-autoencoders/">A
+                        Gentle Introduction to LSTM Autoencoders</a><br>
+                      <a
+href="https://towardsdatascience.com/step-by-step-understanding-lstm-autoencoder-layers-ffab055b6352">Step-by-step
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Understanding LSTM Autoencoder layers</a></font></font><br>
+                  <font face="Trebuchet MS" size="+1"><br>
+                  </font></td>
+                <td class="s4" width="300" height="105"><font
+                    face="Trebuchet MS" size="+1"><b>P</b></font><font
+                    face="Trebuchet MS" size="+1"><font face="Trebuchet
+                      MS" size="+1"><b>yTorch:</b><br>
+                    </font></font>
+                  <ul>
+                    <li><font face="Trebuchet MS" size="+1"><font
+                          face="Trebuchet MS" size="+1"><a
+href="https://github.com/bentrevett/pytorch-seq2seq/blob/master/1%20-%20Sequence%20to%20Sequence%20Learning%20with%20Neural%20Networks.ipynb">Sequence
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            to Sequence Learning with Neural Networks</a><br>
+                        </font></font></li>
+                  </ul>
+                  <ul>
+                    <li><font face="Trebuchet MS" size="+1"><font
+                          size="+1"><a
+href="https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html"><font
+                              face="Trebuchet MS">Translation with
+                              Sequence to Sequence Network and Attention</font></a></font>
+                      </font></li>
+                  </ul>
+                </td>
+                <td class="s4" width="380" height="105">
+                  <p><br>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top"><font face="Trebuchet MS" size="+1"><br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    11</font></td>
+                <td valign="top"><font face="Trebuchet MS" size="+1">5/10-5/16<br>
+                    <br>
+                    <br>
+                  </font></td>
+                <td width="390" valign="top"><font face="Trebuchet MS"
+                    size="+1"><font face="Trebuchet MS" size="+1"><b>Attention
+                        Model</b><br>
+                      <a href="https://arxiv.org/pdf/1409.0473.pdf">Neural
+
+                        Machine Translation By Jointly Learning to Align
+                        and Translate</a><br>
+                      <br>
+                      <a
+href="https://towardsdatascience.com/attn-illustrated-attention-5ec4ad276ee3"><font
+                          face="Trebuchet MS"><font face="Trebuchet MS">Attention:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            Illustrated Attention</font></font></a><br>
+                      <a
+href="http://www.wildml.com/2016/01/attention-and-memory-in-deep-learning-and-nlp/"><font
+                          face="Trebuchet MS">Attention and Memory in
+                          Deep Learning and NLP</font></a></font> </font>
+                  <ul>
+                  </ul>
+                </td>
+                <td width="300" valign="top"><font face="Trebuchet MS"
+                    size="+1"><b><font face="Trebuchet MS" size="3"
+                        color="red"><font style="color: rgb(51, 51, 51);
+                          font-style: normal; font-variant-ligatures:
+                          normal; font-variant-caps: normal;
+                          font-weight: 400; letter-spacing: normal;
+                          orphans: 2; text-align: left; text-indent:
+                          0px; text-transform: none; white-space:
+                          normal; widows: 2; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          background-color: rgb(255, 255, 255);
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;"
+                          face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS"><font face="Trebuchet
+                              MS" size="+1"> </font> </font></font></font></b></font><font
+                    face="Trebuchet MS" size="+1"><b>PyTorch:</b><br>
+                  </font> <font size="+1"><a
+href="https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html"><font
+                        face="Trebuchet MS">Translation with Sequence to
+                        Sequence Network and Attention</font></a></font></td>
+                <td valign="top"> <font face="Trebuchet MS" size="+1"
+                    color="red"><font color="black"><br>
+                      <br>
+                      <br>
+                    </font></font><br>
+                  <font face="Trebuchet MS" size="+1" color="red"><font
+                      color="black"></font></font></td>
+              </tr>
+              <tr>
+                <td valign="top"><font face="Trebuchet MS" size="+1">12</font></td>
+                <td valign="top"><font face="Trebuchet MS" size="+1">5/17-5/23</font></td>
+                <td valign="top"><font size="+1"><font face="Trebuchet
+                      MS"><b>Transformer</b></font></font><font
+                    face="Trebuchet MS" size="+1"><br>
+                    Self Attention: <a
+                      href="https://arxiv.org/pdf/1706.03762.pdf">Attention
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      is All you need</a></font><br>
+                  <font face="Trebuchet MS" size="+1"><font
+                      face="Trebuchet MS" size="+1"><a
+                        href="https://jalammar.github.io/illustrated-transformer/">The
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Illustrated Transformer</a><br>
+                    </font></font><font face="Trebuchet MS" size="+1"><font
+                      face="Trebuchet MS" size="+1"><a
+href="https://medium.com/@bgg/seq2seq-pay-attention-to-self-attention-part-1-d332e85e9aad">Seq2Seq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Pay Attention to Self Attention: Part I</a><br>
+                      <a
+href="https://medium.com/@bgg/seq2seq-pay-attention-to-self-attention-part-2-cf81bf32c73d">Seq2seq
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        Pay Attention to Self Attention: Part 2</a></font></font><font
+                    face="Trebuchet MS" size="+1"><br>
+                  </font> </td>
+                <td valign="top"><font face="Trebuchet MS" size="+1"><b>PyTorch:</b><br>
+                  </font> <font size="+1"><a
+href="https://pytorch.org/tutorials/intermediate/seq2seq_translation_tutorial.html"><font
+                        face="Trebuchet MS">Translation with Sequence to
+                        Sequence Network and Attention</font></a><br>
+                    <br>
+                  </font><a
+                    href="https://github.com/huggingface/transformers"><font
+                      size="+1"><font face="Trebuchet MS"><b>PyTorch-Transformers
+
+
+
+
+
+
+
+
+
+
+
+                          by Huggingface </b></font></font></a><font
+                    face="Trebuchet MS" size="+1">and <a
+                      href="https://huggingface.co/transformers/index.html">Full
+
+
+
+
+
+
+
+
+
+                      Documentation</a><br>
+                  </font> </td>
+                <td valign="top"><font size="+1"><font face="Trebuchet
+                      MS" size="+1"><font face="Trebuchet MS"><b><br>
+                        </b></font></font></font></td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="105"><font
+                    face="Trebuchet MS" size="+1">13</font></td>
+                <td class="s3" width="72" height="105"><font
+                    face="Trebuchet MS" size="+1">5/24-5/30<br>
+                  </font></td>
+                <td class="s4" width="390" height="105">
+                  <ul>
+                  </ul>
+                  <font face="Trebuchet MS" size="+1"><font
+                      face="Trebuchet MS" size="+1"><font size="+1"><font
+                          face="Trebuchet MS"><b>BERT</b></font></font>
+                      (Bidirectional Encoder Representations from
+                      Transformers)</font><font face="Trebuchet MS"
+                      size="+1"><br>
+                    </font> </font>
+                  <ul>
+                    <li><font size="+1"><a
+                          href="http://jalammar.github.io/illustrated-bert/"><font
+                            face="Trebuchet MS">The Illustrated BERT,
+                            ELMo, and co. (How NLP cracked Transfer
+                            Learning)</font></a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/@mromerocalvo/dissecting-bert-part1-6dcf5360b07f">Dissecting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          BERT Part 1: Understanding the Transformer</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/dissecting-bert/dissecting-bert-part2-335ff2ed9c73">Dissecting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          BERT Part2: BERT Specifics</a></font></li>
+                    <li><font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/dissecting-bert/dissecting-bert-appendix-the-decoder-3b86f66b0e5f">Dissecting
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                          BERT Appendix: The Decoder</a></font></li>
+                  </ul>
+                  <p> <font style="color: rgb(51, 51, 51); font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      left; text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial;"
+                      face="Trebuchet MS" size="+1"><b>XLNet<br>
+                      </b></font><a
+href="https://towardsdatascience.com/what-is-xlnet-and-why-it-outperforms-bert-8d8fce710335"
+                      style="color: rgb(0, 136, 204); text-decoration:
+                      none; font-family: &quot;Helvetica Neue&quot;,
+                      Helvetica, Arial, sans-serif; font-size: 13px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: left; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);"><font
+                        face="Trebuchet MS" size="+1"><b><font
+                            face="Trebuchet MS" size="3" color="red"><font
+                              style="color: rgb(51, 51, 51); font-style:
+                              normal; font-variant-ligatures: normal;
+                              font-variant-caps: normal; font-weight:
+                              400; letter-spacing: normal; orphans: 2;
+                              text-align: left; text-indent: 0px;
+                              text-transform: none; white-space: normal;
+                              widows: 2; word-spacing: 0px;
+                              -webkit-text-stroke-width: 0px;
+                              background-color: rgb(255, 255, 255);
+                              text-decoration-style: initial;
+                              text-decoration-color: initial;"
+                              face="Trebuchet MS" size="+1"><font
+                                face="Trebuchet MS">What is XLNet and
+                                why it outperforms BERT? </font></font></font></b></font></a><br>
+                    <a
+href="https://towardsdatascience.com/xlnet-a-clever-language-modeling-solution-ab41e87798b0"
+                      style="color: rgb(0, 136, 204); text-decoration:
+                      none; font-family: &quot;Helvetica Neue&quot;,
+                      Helvetica, Arial, sans-serif; font-size: 13px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: left; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);"><font
+                        face="Trebuchet MS" size="+1"><b><font
+                            face="Trebuchet MS" size="3" color="red"><font
+                              style="color: rgb(51, 51, 51); font-style:
+                              normal; font-variant-ligatures: normal;
+                              font-variant-caps: normal; font-weight:
+                              400; letter-spacing: normal; orphans: 2;
+                              text-align: left; text-indent: 0px;
+                              text-transform: none; white-space: normal;
+                              widows: 2; word-spacing: 0px;
+                              -webkit-text-stroke-width: 0px;
+                              background-color: rgb(255, 255, 255);
+                              text-decoration-style: initial;
+                              text-decoration-color: initial;"
+                              face="Trebuchet MS" size="+1"><font
+                                face="Trebuchet MS">XLNet - a clever
+                                language modeling solution </font></font></font></b></font></a><br>
+                    <a
+href="https://medium.com/logits/xlnet-sota-pre-training-method-that-outperforms-bert-26d4e9978983"
+                      style="color: rgb(0, 136, 204); text-decoration:
+                      none; font-family: &quot;Helvetica Neue&quot;,
+                      Helvetica, Arial, sans-serif; font-size: 13px;
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: left; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);"><font
+                        face="Trebuchet MS" size="+1"><b><font
+                            face="Trebuchet MS" size="3" color="red"><font
+                              style="color: rgb(51, 51, 51); font-style:
+                              normal; font-variant-ligatures: normal;
+                              font-variant-caps: normal; font-weight:
+                              400; letter-spacing: normal; orphans: 2;
+                              text-align: left; text-indent: 0px;
+                              text-transform: none; white-space: normal;
+                              widows: 2; word-spacing: 0px;
+                              -webkit-text-stroke-width: 0px;
+                              background-color: rgb(255, 255, 255);
+                              text-decoration-style: initial;
+                              text-decoration-color: initial;"
+                              face="Trebuchet MS" size="+1"><font
+                                face="Trebuchet MS">XLNET -SOTA
+                                pre-training method that outperforms
+                                BERT</font></font></font></b></font></a><br>
+                  </p>
+                  <p><font style="color: rgb(51, 51, 51); font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      left; text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial;"
+                      face="Trebuchet MS" size="+1"><b>XLM<br>
+                      </b></font><a
+href="https://towardsdatascience.com/xlm-enhancing-bert-for-cross-lingual-language-model-5aeed9e6f14b"><font
+                        face="Trebuchet MS" size="+1">XLM - Enhancing
+                        BERT for Cross-lingual Language Model </font></a><font
+                      style="color: rgb(51, 51, 51); font-style: normal;
+                      font-variant-ligatures: normal; font-variant-caps:
+                      normal; font-weight: 400; letter-spacing: normal;
+                      orphans: 2; text-align: left; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;" face="Trebuchet
+                      MS" size="+1"><b><br>
+                      </b></font></p>
+                  <p><font style="color: rgb(51, 51, 51); font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      left; text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial;"
+                      face="Trebuchet MS" size="+1"><b>FastBert<br>
+                      </b></font><font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/huggingface/introducing-fastbert-a-simple-deep-learning-library-for-bert-models-89ff763ad384">Introducing
+
+
+
+
+
+
+
+
+                        FastBert - A Simple Deep Learning Library for
+                        BERT Models</a><br>
+                    </font></p>
+                  <p><font style="color: rgb(51, 51, 51); font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      left; text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial;"
+                      face="Trebuchet MS" size="+1"><b>RoBERTa<br>
+                      </b></font><font face="Trebuchet MS" size="+1"><a
+                        href="https://arxiv.org/abs/1907.11692">RoBERTa:
+                        A Robustly Optimized BERT Pretaining Approach </a><br>
+                    </font></p>
+                  <p><font face="Trebuchet MS" size="+1"><a
+href="https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-supervised-nlp-systems/">RoBERTa:
+
+
+
+
+
+
+
+
+                        An optimized method for self-supervised NLP
+                        systems</a></font><br>
+                  </p>
+                  <p><font style="color: rgb(51, 51, 51); font-style:
+                      normal; font-variant-ligatures: normal;
+                      font-variant-caps: normal; font-weight: 400;
+                      letter-spacing: normal; orphans: 2; text-align:
+                      left; text-indent: 0px; text-transform: none;
+                      white-space: normal; widows: 2; word-spacing: 0px;
+                      -webkit-text-stroke-width: 0px; background-color:
+                      rgb(255, 255, 255); text-decoration-style:
+                      initial; text-decoration-color: initial;"
+                      face="Trebuchet MS" size="+1"><b><a
+href="https://towardsdatascience.com/distilling-bert-how-to-achieve-bert-performance-using-logistic-regression-69a7fc14249d">Distilling
+
+
+
+
+
+
+
+
+                          BERT - How to achieve BERT performance using
+                          Logistic Regression</a><br>
+                      </b></font><font style="color: rgb(51, 51, 51);
+                      font-style: normal; font-variant-ligatures:
+                      normal; font-variant-caps: normal; font-weight:
+                      400; letter-spacing: normal; orphans: 2;
+                      text-align: left; text-indent: 0px;
+                      text-transform: none; white-space: normal; widows:
+                      2; word-spacing: 0px; -webkit-text-stroke-width:
+                      0px; background-color: rgb(255, 255, 255);
+                      text-decoration-style: initial;
+                      text-decoration-color: initial;" face="Trebuchet
+                      MS" size="+1"><b><br>
+                        <a
+href="https://medium.com/@lessw/meet-albert-a-new-lite-bert-from-google-toyota-with-state-of-the-art-nlp-performance-and-18x-df8f7b58fa28">Meet
+
+
+
+
+
+
+
+
+                          ALBERT: a new 'Lite BERT' from Google &amp;
+                          Toyota With State of the ART NLP performance
+                          and 18x fewer parameters</a><br>
+                        <br>
+                      </b></font></p>
+                  <font style="color: rgb(51, 51, 51); font-style:
+                    normal; font-variant-ligatures: normal;
+                    font-variant-caps: normal; font-weight: 400;
+                    letter-spacing: normal; orphans: 2; text-align:
+                    left; text-indent: 0px; text-transform: none;
+                    white-space: normal; widows: 2; word-spacing: 0px;
+                    -webkit-text-stroke-width: 0px; background-color:
+                    rgb(255, 255, 255); text-decoration-style: initial;
+                    text-decoration-color: initial;" face="Trebuchet MS"
+                    size="+1"><b><a
+href="https://towardsdatascience.com/bert-roberta-distilbert-xlnet-which-one-to-use-3d5ab82ba5f8">BERT,
+
+
+
+
+
+
+
+
+                        RoBERTa, DIstilBERT, XLNet - which one to use?</a></b></font><font
+                    face="Trebuchet MS" size="+1"> </font>
+                  <ul>
+                  </ul>
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="105"><font
+                    face="Trebuchet MS" size="+1"><font face="Trebuchet
+                      MS"><b>PyTorch:</b><br>
+                    </font></font> <font size="+1"><a
+href="http://nlp.seas.harvard.edu/2018/04/03/attention.html#embeddings-and-softmax"><font
+                        face="Trebuchet MS">The Annotated Transformer</font></a><br>
+                    <br>
+                  </font><font face="Trebuchet MS" size="+1"><b><font
+                        face="Trebuchet MS" size="3" color="red"><font
+                          style="color: rgb(51, 51, 51); font-style:
+                          normal; font-variant-ligatures: normal;
+                          font-variant-caps: normal; font-weight: 400;
+                          letter-spacing: normal; orphans: 2;
+                          text-align: left; text-indent: 0px;
+                          text-transform: none; white-space: normal;
+                          widows: 2; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          background-color: rgb(255, 255, 255);
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;"
+                          face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS">BERT Fine Tuning<br>
+                          </font></font></font></b></font><font
+                    face="Trebuchet MS" size="+1"><b><font
+                        face="Trebuchet MS" size="3" color="red"><font
+                          style="color: rgb(51, 51, 51); font-style:
+                          normal; font-variant-ligatures: normal;
+                          font-variant-caps: normal; font-weight: 400;
+                          letter-spacing: normal; orphans: 2;
+                          text-align: left; text-indent: 0px;
+                          text-transform: none; white-space: normal;
+                          widows: 2; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          background-color: rgb(255, 255, 255);
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;"
+                          face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS"><font face="Trebuchet
+                              MS" size="+1"><a
+                                href="https://mccormickml.com/2019/07/22/BERT-fine-tuning/">BERT<font
+                                  color="red"><b> </b></font>Fine-Tuning
+
+
+
+
+
+                                Tutorial with PyTorch</a><br>
+                              <a
+href="https://medium.com/swlh/painless-fine-tuning-of-bert-in-pytorch-b91c14912caa">Painless
+
+
+
+
+
+                                Fine-Tuning of BERT in Pytorch</a><br>
+                              <br>
+                              <br>
+                              <br>
+                            </font></font></font></font></b></font><br>
+                  <font face="Trebuchet MS" size="+1"><b><font
+                        face="Trebuchet MS" size="3" color="red"><font
+                          style="color: rgb(51, 51, 51); font-style:
+                          normal; font-variant-ligatures: normal;
+                          font-variant-caps: normal; font-weight: 400;
+                          letter-spacing: normal; orphans: 2;
+                          text-align: left; text-indent: 0px;
+                          text-transform: none; white-space: normal;
+                          widows: 2; word-spacing: 0px;
+                          -webkit-text-stroke-width: 0px;
+                          background-color: rgb(255, 255, 255);
+                          text-decoration-style: initial;
+                          text-decoration-color: initial;"
+                          face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS"><font face="Trebuchet
+                              MS" size="+1"><a
+href="https://www.analyticsvidhya.com/blog/2019/08/complete-list-important-frameworks-nlp/?utm_source=blog&amp;utm_medium=demystifying-bert-groundbreaking-nlp-framework"><font
+                                  face="Trebuchet MS" size="+1"
+                                  color="red"><font color="black"><font
+                                      size="+1"><b><font face="Trebuchet
+                                          MS" size="+1">The Latest
+                                          Breakthroughs and Developments
+                                          in Natural Language Processing</font></b></font></font></font></a>
+                            </font> </font></font></font></b></font></td>
+                <td class="s4" width="380" height="105"><br>
+                  <p><font size="+1"><font face="Trebuchet MS"><b><br>
+                        </b></font></font><font size="+1"><font
+                        face="Trebuchet MS" size="+1"><font
+                          face="Trebuchet MS"><b></b></font></font></font><font
+                      face="Trebuchet MS" size="+1">
+                      <meta charset="utf-8">
+                    </font></p>
+                </td>
+              </tr>
+              <tr>
+                <td class="s2" width="17" height="79"><font
+                    face="Trebuchet MS" size="+1">14</font></td>
+                <td class="s3" width="72" height="79"><font
+                    face="Trebuchet MS" size="+1">5/31-6/6</font></td>
+                <td class="s4" width="390" height="79">
+                  <ul>
+                  </ul>
+                  <p style="line-height:100%; margin-top:0;
+                    margin-bottom:0;"><font face="Trebuchet MS"
+                      size="+1"><b>Embeddings (word embeddings)</b><br>
+                    </font><font size="+1"><br>
+                    </font> </p>
+                  <font face="Trebuchet MS" size="+1"><font
+                      face="Trebuchet MS">Sebastian Ruder의 On word
+                      Embeddings Part1, 2, 3, 4:&nbsp; </font> </font>
+                  <ul>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;">
+                      <div><font face="Trebuchet MS" size="+1">Part 1: <a
+                            href="http://ruder.io/word-embeddings-1/">On
+                            word embeddings</a> <br>
+                        </font></div>
+                    </li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;">
+                      <div><font face="Trebuchet MS" size="+1">Part 2: <a
+href="http://ruder.io/word-embeddings-softmax/index.html">Approximating
+                            the Softmax</a></font></div>
+                    </li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;">
+                      <div><font face="Trebuchet MS" size="+1">Part
+                          3:&nbsp;T<a
+                            href="http://ruder.io/secret-word2vec/index.html">he
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                            secret ingredients of word2vec</a></font></div>
+                    </li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;">
+                      <div><font face="Trebuchet MS" size="+1">Part 4:<a
+href="http://ruder.io/cross-lingual-embeddings/index.html"> A survey of
+                            cross-lingual embedding models</a></font></div>
+                    </li>
+                    <li style="line-height:100%; margin-top:0;
+                      margin-bottom:0;">
+                      <div><font face="Trebuchet MS" size="+1">Part 5: <a
+href="http://ruder.io/word-embeddings-2017/index.html">Word Embeddings
+                            in 2017- Trends in Future directions</a></font>
+                      </div>
+                    </li>
+                  </ul>
+                  <font face="Trebuchet MS" size="+1"><a
+href="https://towardsdatascience.com/understanding-feature-engineering-part-4-deep-learning-methods-for-text-data-96c44370bbfa">A
+                      hands-on Intuitive Approach to Deep Learning
+                      Methods for Text Data - Word2Vec, Glove, and
+                      FastText</a><br>
+                    <br>
+                  </font> <font face="Trebuchet MS" size="+1"><a
+href="https://medium.com/huggingface/universal-word-sentence-embeddings-ce48ddc8fc3a">The
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Current Best of Universal Word Embeddings and
+                      Sentence Embeddings</a><br>
+                    <br>
+                    <a
+href="file:///Users/snumaccore/OneDrive/cl_course/ComputationalLinguistics/EmbeddingsForNLP02WordEmbeddings.ipynb">Notebook</a></font>
+                  <ul>
+                  </ul>
+                </td>
+                <td class="s4" width="300" height="79">
+                  <p><font size="+1">&nbsp;</font></p>
+                  <p><font face="Trebuchet MS" size="+1"><b>PyTorch:</b><br>
+                    </font></p>
+                  <font face="Trebuchet MS" size="+1"><a
+href="https://pytorch.org/tutorials/beginner/nlp/word_embeddings_tutorial.html#sphx-glr-beginner-nlp-word-embeddings-tutorial-py">Word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      Embeddings: Encoding Lexical Semantics</a></font>
+                  <p><br>
+                    <font size="+1"><a
+                        href="https://mccormickml.com/2019/05/14/BERT-word-embeddings-tutorial/"><font
+                          face="Trebuchet MS" size="+1"><font
+                            face="Trebuchet MS"><b>BERT Word Embedding</b></font></font></a>
+                    </font></p>
+                  <p><br>
+                  </p>
+                </td>
+                <td class="s4" width="380" height="79"><font size="+1">
+                    &nbsp; </font></td>
+              </tr>
+              <tr>
+                <td valign="top"><font face="Trebuchet MS" size="+1">15</font></td>
+                <td valign="top"><font face="Trebuchet MS" size="+1">6/7-6/13</font></td>
+                <td width="390" valign="top"><font face="Trebuchet MS"
+                    size="+1"><font face="Trebuchet MS"><b>Final Test </b><br>
+                    </font></font></td>
+                <td width="300" valign="top"><font size="+1"><br>
+                  </font> </td>
+                <td valign="top"><font size="+1"><br>
+                  </font> </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <hr>
+      <h2><br>
+      </h2>
+      <br>
+    </div>
+  </body>
+</html>
